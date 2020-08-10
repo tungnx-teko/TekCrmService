@@ -6,14 +6,60 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		1A7FC0B324E12C0900B90FE1 /* Crm-Universal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1A7FC0B424E12C0900B90FE1 /* Build configuration list for PBXAggregateTarget "Crm-Universal" */;
+			buildPhases = (
+				1A7FC0B724E12C0F00B90FE1 /* Build Fat framework */,
+			);
+			dependencies = (
+			);
+			name = "Crm-Universal";
+			productName = "Crm-Universal";
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		1A7FC08B24E0ED1200B90FE1 /* TekCrmService.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A7FC08924E0ED1200B90FE1 /* TekCrmService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A7FC09724E0F4C300B90FE1 /* CrmRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7FC09624E0F4C300B90FE1 /* CrmRequest.swift */; };
+		1A7FC09924E1022E00B90FE1 /* CrmResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7FC09824E1022E00B90FE1 /* CrmResponse.swift */; };
+		1A7FC09B24E1024F00B90FE1 /* CrmCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7FC09A24E1024F00B90FE1 /* CrmCode.swift */; };
+		1A7FC09D24E1028700B90FE1 /* CrmCustomer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7FC09C24E1028700B90FE1 /* CrmCustomer.swift */; };
+		1A7FC09F24E1028E00B90FE1 /* CrmError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7FC09E24E1028E00B90FE1 /* CrmError.swift */; };
+		1A7FC0A124E102E400B90FE1 /* CrmBankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7FC0A024E102E400B90FE1 /* CrmBankAccount.swift */; };
+		1A7FC0A324E1038000B90FE1 /* CrmVat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7FC0A224E1038000B90FE1 /* CrmVat.swift */; };
+		1A7FC0A524E1044300B90FE1 /* CrmContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7FC0A424E1044300B90FE1 /* CrmContact.swift */; };
+		1A7FC0A724E11D5F00B90FE1 /* CrmBrandAwareness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7FC0A624E11D5F00B90FE1 /* CrmBrandAwareness.swift */; };
+		1A7FC0A924E11D9700B90FE1 /* CrmInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7FC0A824E11D9700B90FE1 /* CrmInformation.swift */; };
+		1A7FC0AB24E1203600B90FE1 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7FC0AA24E1203600B90FE1 /* Constant.swift */; };
+		1A7FC0AD24E1276F00B90FE1 /* CrmPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7FC0AC24E1276F00B90FE1 /* CrmPayload.swift */; };
+		1A7FC0B024E129E600B90FE1 /* CrmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7FC0AF24E129E600B90FE1 /* CrmService.swift */; };
+		1A7FC0B224E12B7500B90FE1 /* CrmServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7FC0B124E12B7500B90FE1 /* CrmServiceFactory.swift */; };
+		7F9BFF72A00D122AF272496E /* Pods_TekCrmService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27E4CA2A37B04A398F6040C /* Pods_TekCrmService.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0FBAD3625318DF05BB52EECF /* Pods-TekCrmService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TekCrmService.release.xcconfig"; path = "Target Support Files/Pods-TekCrmService/Pods-TekCrmService.release.xcconfig"; sourceTree = "<group>"; };
 		1A7FC08624E0ED1200B90FE1 /* TekCrmService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TekCrmService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A7FC08924E0ED1200B90FE1 /* TekCrmService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TekCrmService.h; sourceTree = "<group>"; };
 		1A7FC08A24E0ED1200B90FE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A7FC09624E0F4C300B90FE1 /* CrmRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrmRequest.swift; sourceTree = "<group>"; };
+		1A7FC09824E1022E00B90FE1 /* CrmResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrmResponse.swift; sourceTree = "<group>"; };
+		1A7FC09A24E1024F00B90FE1 /* CrmCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrmCode.swift; sourceTree = "<group>"; };
+		1A7FC09C24E1028700B90FE1 /* CrmCustomer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrmCustomer.swift; sourceTree = "<group>"; };
+		1A7FC09E24E1028E00B90FE1 /* CrmError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrmError.swift; sourceTree = "<group>"; };
+		1A7FC0A024E102E400B90FE1 /* CrmBankAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrmBankAccount.swift; sourceTree = "<group>"; };
+		1A7FC0A224E1038000B90FE1 /* CrmVat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrmVat.swift; sourceTree = "<group>"; };
+		1A7FC0A424E1044300B90FE1 /* CrmContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrmContact.swift; sourceTree = "<group>"; };
+		1A7FC0A624E11D5F00B90FE1 /* CrmBrandAwareness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrmBrandAwareness.swift; sourceTree = "<group>"; };
+		1A7FC0A824E11D9700B90FE1 /* CrmInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrmInformation.swift; sourceTree = "<group>"; };
+		1A7FC0AA24E1203600B90FE1 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		1A7FC0AC24E1276F00B90FE1 /* CrmPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrmPayload.swift; sourceTree = "<group>"; };
+		1A7FC0AF24E129E600B90FE1 /* CrmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrmService.swift; sourceTree = "<group>"; };
+		1A7FC0B124E12B7500B90FE1 /* CrmServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrmServiceFactory.swift; sourceTree = "<group>"; };
+		C27E4CA2A37B04A398F6040C /* Pods_TekCrmService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TekCrmService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECAE2716B18A13AE2623336C /* Pods-TekCrmService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TekCrmService.debug.xcconfig"; path = "Target Support Files/Pods-TekCrmService/Pods-TekCrmService.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F9BFF72A00D122AF272496E /* Pods_TekCrmService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +79,8 @@
 			children = (
 				1A7FC08824E0ED1200B90FE1 /* TekCrmService */,
 				1A7FC08724E0ED1200B90FE1 /* Products */,
+				BB338C5FB9100F6D565AFDF9 /* Pods */,
+				96EE4ECF005E940C1133A98B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +95,89 @@
 		1A7FC08824E0ED1200B90FE1 /* TekCrmService */ = {
 			isa = PBXGroup;
 			children = (
+				1A7FC09124E0ED1F00B90FE1 /* Classes */,
 				1A7FC08924E0ED1200B90FE1 /* TekCrmService.h */,
 				1A7FC08A24E0ED1200B90FE1 /* Info.plist */,
 			);
 			path = TekCrmService;
+			sourceTree = "<group>";
+		};
+		1A7FC09124E0ED1F00B90FE1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1A7FC0AE24E129DC00B90FE1 /* Service */,
+				1A7FC09524E0ED3200B90FE1 /* Models */,
+				1A7FC09424E0ED2D00B90FE1 /* Response */,
+				1A7FC09324E0ED2900B90FE1 /* Request */,
+				1A7FC09224E0ED2500B90FE1 /* Core */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1A7FC09224E0ED2500B90FE1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1A7FC0AA24E1203600B90FE1 /* Constant.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1A7FC09324E0ED2900B90FE1 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				1A7FC09624E0F4C300B90FE1 /* CrmRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		1A7FC09424E0ED2D00B90FE1 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				1A7FC09824E1022E00B90FE1 /* CrmResponse.swift */,
+				1A7FC09A24E1024F00B90FE1 /* CrmCode.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		1A7FC09524E0ED3200B90FE1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1A7FC09C24E1028700B90FE1 /* CrmCustomer.swift */,
+				1A7FC09E24E1028E00B90FE1 /* CrmError.swift */,
+				1A7FC0A024E102E400B90FE1 /* CrmBankAccount.swift */,
+				1A7FC0A224E1038000B90FE1 /* CrmVat.swift */,
+				1A7FC0A424E1044300B90FE1 /* CrmContact.swift */,
+				1A7FC0A624E11D5F00B90FE1 /* CrmBrandAwareness.swift */,
+				1A7FC0A824E11D9700B90FE1 /* CrmInformation.swift */,
+				1A7FC0AC24E1276F00B90FE1 /* CrmPayload.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1A7FC0AE24E129DC00B90FE1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				1A7FC0AF24E129E600B90FE1 /* CrmService.swift */,
+				1A7FC0B124E12B7500B90FE1 /* CrmServiceFactory.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		96EE4ECF005E940C1133A98B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C27E4CA2A37B04A398F6040C /* Pods_TekCrmService.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB338C5FB9100F6D565AFDF9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ECAE2716B18A13AE2623336C /* Pods-TekCrmService.debug.xcconfig */,
+				0FBAD3625318DF05BB52EECF /* Pods-TekCrmService.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,6 +198,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A7FC08E24E0ED1200B90FE1 /* Build configuration list for PBXNativeTarget "TekCrmService" */;
 			buildPhases = (
+				6B5462D750D085D3C380DF58 /* [CP] Check Pods Manifest.lock */,
 				1A7FC08124E0ED1200B90FE1 /* Headers */,
 				1A7FC08224E0ED1200B90FE1 /* Sources */,
 				1A7FC08324E0ED1200B90FE1 /* Frameworks */,
@@ -95,6 +224,10 @@
 				TargetAttributes = {
 					1A7FC08524E0ED1200B90FE1 = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
+					};
+					1A7FC0B324E12C0900B90FE1 = {
+						CreatedOnToolsVersion = 11.6;
 					};
 				};
 			};
@@ -112,6 +245,7 @@
 			projectRoot = "";
 			targets = (
 				1A7FC08524E0ED1200B90FE1 /* TekCrmService */,
+				1A7FC0B324E12C0900B90FE1 /* Crm-Universal */,
 			);
 		};
 /* End PBXProject section */
@@ -126,11 +260,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1A7FC0B724E12C0F00B90FE1 /* Build Fat framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Fat framework";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# build fat framework script\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\nWORKSPACE=\"TekCrmService.xcworkspace\"\nNAME_OUTPUT_FOLDER=\"Outputs\"\nOUTPUT_FOLDER=\"${PROJECT_DIR}/${NAME_OUTPUT_FOLDER}/\"\n\nSDK_TARGET_NAME=\"TekCrmService\"\n#ZIP_NAME=\"${SDK_TARGET_NAME}.zip\"\n\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\nmkdir -p \"${OUTPUT_FOLDER}\"\n\n# Build Device and Simulator versions\nxcodebuild -workspace \"${WORKSPACE}\" -scheme \"${SDK_TARGET_NAME}\" -configuration ${CONFIGURATION} -sdk iphoneos BUILD_DIR=\"${BUILD_DIR}\" ONLY_ACTIVE_ARCH=NO BUILD_ROOT=\"${BUILD_ROOT}\" OBJROOT=\"${OBJROOT}/DependentBuilds\"\nxcodebuild -workspace \"${WORKSPACE}\" -scheme \"${SDK_TARGET_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ARCHS=x86_64 ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" OBJROOT=\"${OBJROOT}/DependentBuilds\"\n\n# make fat framework\n\"${PROJECT_DIR}/build-phases/make-fat-framework.sh\" \"${UNIVERSAL_OUTPUTFOLDER}\" \"${SDK_TARGET_NAME}\" \"${OUTPUT_FOLDER}\"\n\n# Open the project's directory in Finder\nopen \"${OUTPUT_FOLDER}\"\n\n# Zip file\n#zip -r \"${ZIP_NAME}\" ./\"${NAME_OUTPUT_FOLDER}\"\n";
+		};
+		6B5462D750D085D3C380DF58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TekCrmService-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1A7FC08224E0ED1200B90FE1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A7FC09F24E1028E00B90FE1 /* CrmError.swift in Sources */,
+				1A7FC0A524E1044300B90FE1 /* CrmContact.swift in Sources */,
+				1A7FC09D24E1028700B90FE1 /* CrmCustomer.swift in Sources */,
+				1A7FC0AD24E1276F00B90FE1 /* CrmPayload.swift in Sources */,
+				1A7FC09B24E1024F00B90FE1 /* CrmCode.swift in Sources */,
+				1A7FC09724E0F4C300B90FE1 /* CrmRequest.swift in Sources */,
+				1A7FC0A724E11D5F00B90FE1 /* CrmBrandAwareness.swift in Sources */,
+				1A7FC0A124E102E400B90FE1 /* CrmBankAccount.swift in Sources */,
+				1A7FC0A924E11D9700B90FE1 /* CrmInformation.swift in Sources */,
+				1A7FC0AB24E1203600B90FE1 /* Constant.swift in Sources */,
+				1A7FC0A324E1038000B90FE1 /* CrmVat.swift in Sources */,
+				1A7FC0B024E129E600B90FE1 /* CrmService.swift in Sources */,
+				1A7FC09924E1022E00B90FE1 /* CrmResponse.swift in Sources */,
+				1A7FC0B224E12B7500B90FE1 /* CrmServiceFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +379,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -245,7 +436,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -259,7 +450,10 @@
 		};
 		1A7FC08F24E0ED1200B90FE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECAE2716B18A13AE2623336C /* Pods-TekCrmService.debug.xcconfig */;
 			buildSettings = {
+				BITCODE_GENERATION_MODE = marker;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -275,6 +469,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = vn.teko.TekCrmService;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -282,7 +478,10 @@
 		};
 		1A7FC09024E0ED1200B90FE1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FBAD3625318DF05BB52EECF /* Pods-TekCrmService.release.xcconfig */;
 			buildSettings = {
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -298,8 +497,25 @@
 				PRODUCT_BUNDLE_IDENTIFIER = vn.teko.TekCrmService;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1A7FC0B524E12C0900B90FE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1A7FC0B624E12C0900B90FE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -320,6 +536,15 @@
 			buildConfigurations = (
 				1A7FC08F24E0ED1200B90FE1 /* Debug */,
 				1A7FC09024E0ED1200B90FE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A7FC0B424E12C0900B90FE1 /* Build configuration list for PBXAggregateTarget "Crm-Universal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A7FC0B524E12C0900B90FE1 /* Debug */,
+				1A7FC0B624E12C0900B90FE1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,0 +1,1404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		6F19DB2793B2E42C7E283F096E99C242 /* TekCoreService */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FC4446A26E9EF55ED9610D48EBE2FF46 /* Build configuration list for PBXAggregateTarget "TekCoreService" */;
+			buildPhases = (
+			);
+			dependencies = (
+				07555F664FAF602320F3FA6DCAEA95C4 /* PBXTargetDependency */,
+			);
+			name = TekCoreService;
+		};
+		FBE8C14FBF96EFDFE3499F77CC023BC5 /* TekCoreNetwork */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 50C159F4CE34BDCB068E8CE1B1121862 /* Build configuration list for PBXAggregateTarget "TekCoreNetwork" */;
+			buildPhases = (
+			);
+			dependencies = (
+				39FB0134F0AF7D78B29B44860947ABFD /* PBXTargetDependency */,
+			);
+			name = TekCoreNetwork;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0139689523DA17D5A7FC3F38192075E5 /* Pods-TekCrmService-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A29BAFA41A63B157AE744BBEDAFF868 /* Pods-TekCrmService-dummy.m */; };
+		047F10D7EFFB93781D53A3D30BC672E3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		0C5E11DE24DAA737704B355F5F2F3426 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5DFF6CEE4C555475E66A3BC5B409FC /* ParameterEncoding.swift */; };
+		0D987C68D68FE22E5A126BC5CAA53E5C /* IPageBuilderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECFEB8C64A5E837F85F0F39F0F0D322 /* IPageBuilderService.swift */; };
+		0FD9534855DBE3470469605A1BB2599D /* IOrderCustomer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26416FD86246903D71A2619F6EFE577 /* IOrderCustomer.swift */; };
+		0FE751FC96F5B9487600BC460208D40C /* IOrderNotificationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F352113F68488963B520A189C57316 /* IOrderNotificationData.swift */; };
+		132E0F619E4338E5D1B27E4C72076B3F /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AC53EC974884F32884271D363146E6 /* Notifications.swift */; };
+		1383D3A219E22D98948C397ADFB7DFF8 /* IOrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C2ADB26233921C2B66F8EE2AA8A8DA /* IOrderItem.swift */; };
+		153CCB96BFE650A4F5490219DB78998A /* IShippingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F02701F9B9D6599EA793BC51D0DB986 /* IShippingService.swift */; };
+		16D59E98F8E25982F7FCB833EB600D60 /* ICrmResponseMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82BFD62F782CDFDF29FBF89713480B3 /* ICrmResponseMessage.swift */; };
+		174782184DF0E286714C7D0A61EB3ED6 /* IBlockParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = C110C298262CFC5E5D043E95C579DC1E /* IBlockParams.swift */; };
+		1842871B06913986CF4DF8D11EA65685 /* IVoucher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6DEE884521C622920554AB5EA4782DD /* IVoucher.swift */; };
+		1945CD5D63A1C164AEAAA9A33E85571E /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD7BE990561801BBB8054BF5B1CBF1DF /* Alamofire-dummy.m */; };
+		1986B50C74F1697EA43F68335C93CEB3 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0254C62C348D559EAA97738962B1C7 /* MultipartFormData.swift */; };
+		1A530CDDF58E8A54EE7124F9F87F49B2 /* IBannerResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223A57B581F3F20CA78B50B72E27014C /* IBannerResult.swift */; };
+		1DB2C6A53719EB7EDD74C5FE5141BEBD /* IDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1158A3D3772079F704FFBC987F7D8191 /* IDefinition.swift */; };
+		1DC2CBF0F0C900420D3427FAB4D9C42C /* IOrderPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E31036B36CDF7B51D4BCAEC64A18360A /* IOrderPayment.swift */; };
+		1F9D50D6D5F0BDDBD564C8EEDCB5BDFB /* IStnService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF60D74E228631EDE0FAF57499F1BED /* IStnService.swift */; };
+		2266DA79133F656E087082CB9B1B3960 /* ICrmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A4AEF7427FC47CB3441045D9483A156 /* ICrmService.swift */; };
+		23E092956E56C1E6A913D38879289E27 /* IMoney.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14372EACDE23626530ACFF7FA741747A /* IMoney.swift */; };
+		253C023D93D9296E12B5E81728AB7A10 /* IOrderPaymentConfirmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDBDE819A7CA7CB8EA19D76D3769253 /* IOrderPaymentConfirmer.swift */; };
+		2C61B040BA6A9A7AE66C4D9BA26D5520 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6098D1DB008DC265C573861276155B /* SessionDelegate.swift */; };
+		3044DDB05307FFA9CDB137EAB4BCB7AB /* IBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E04DA9F6D9BC293CD31D690DBE833E0 /* IBanner.swift */; };
+		3292802F5D6CEF18A8DCAF9BAFC902B0 /* IBlockContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435E36CD4DE71A40E39C650C8860AA7C /* IBlockContent.swift */; };
+		3571F958A3907B3A806E62D50C2550D4 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD783620A7E81CD74D00461E77FDEBA5 /* NetworkReachabilityManager.swift */; };
+		3C5D57774CB043CCB6EC2493D4651017 /* ILocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87658AA06A2903ACE92F8F9804F5D427 /* ILocationService.swift */; };
+		3CAF93FBD25BB46138C979F8313E9547 /* IOrderListResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB00D0DB30BFAF18119706A5F8BA8FE8 /* IOrderListResult.swift */; };
+		53791F5E5F07400F92CFDFC89A432305 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF6952AC9DD24463AA460BEFEE1E72 /* Validation.swift */; };
+		597C0C5CD81B3C14B04190F0034082CB /* IWard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF75F5C39A7471D60D03737C1D09B3F /* IWard.swift */; };
+		5AF4FB0E25847690B401C66153192B7A /* IBillingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F892284ED1C814E45BA12926FD8697 /* IBillingInfo.swift */; };
+		5B97145124AE6C95C2149C76A9C54E9E /* ICrmBankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FDD66E2927FC256C8578A4E08B93D6 /* ICrmBankAccount.swift */; };
+		64744C911253C3E01461FAD7C935C8D7 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527E37D368477338A1FF8D23A6BF7988 /* Result.swift */; };
+		6B67100343152EA59D30BE5F721122C4 /* IOrderListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D46D6863736FEA0088BCA42DF6DAFA /* IOrderListItem.swift */; };
+		6EA88485C331B75B9275E047DB962809 /* ISeller.swift in Sources */ = {isa = PBXBuildFile; fileRef = B086250C0C9E0DF4F075F0BF9502C6E4 /* ISeller.swift */; };
+		73A135D11C1AD1EDD538CB9FC8CD9F4E /* IBlockSorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E27A767849D24C45011AE7728C788DC9 /* IBlockSorting.swift */; };
+		7664FD4F59A0C00866CBAE60B0A3AD64 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		779C9141B55ADFA0342E498995E77021 /* IItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8842F7F84E00D6B63AF0F596104DC283 /* IItem.swift */; };
+		7AF47DE8E3C9CA251BA13067C5D0E604 /* IApply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D85D9C5EAC0433140B8BC9C7C60784 /* IApply.swift */; };
+		7F28517DA4C1C8A158E03C7581597A35 /* IOrderVoucher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0B69186677F6C643F64D751B1FFC59 /* IOrderVoucher.swift */; };
+		804DBE7830B3F0ABBF0E9DF8D96527EA /* IDiscoveryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3043B411992511817735380354E4D8 /* IDiscoveryService.swift */; };
+		8082BDD36214E7A6C85CC8B9C8C767BD /* ICrmContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4BF48461C513C2FEEFBEC6E253E62D4 /* ICrmContact.swift */; };
+		8318DE4D8D6A8F38A3C76EEB66590BD1 /* IBlockResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354497F700BC1101A388F90BCD10A15D /* IBlockResult.swift */; };
+		83956E20859CDBBE7BC38ABADE0170FB /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25DFDD76D79185AFD5F5FED2984811E /* AFError.swift */; };
+		87EA9139AA0CC1676E882410054CFCFF /* IOrderGift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E54FF8A7619A137EAC6FF08FABA5CAE /* IOrderGift.swift */; };
+		88C22EC0DFA9DDB911FDCE1ECE8939AF /* IExtraDataNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FDE96485AF94CBF8688F9B1FB5E7795 /* IExtraDataNotification.swift */; };
+		931BBB8230A25161D5C37528A8F9FECF /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FD142679D0800189EC87018D82277DD /* SessionManager.swift */; };
+		933FDA5970AA525D6CB92BFEBA2BAB4A /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B56E2E2FA89EE8E867629E57AEFB44E /* Timeline.swift */; };
+		93C3FA2A1AD7929FA69BF3B8D6E65D97 /* ITimeRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6557CE30413482EFFD3C1025C2646AAE /* ITimeRange.swift */; };
+		943314DAEA73E7E9F2506B5109841924 /* IAppliedPromotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20AE87D3A813BDC4419186D012BFB5D /* IAppliedPromotion.swift */; };
+		98A929C8E9012AB167672714FFD2113C /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EE8754256BBD37048E5333833079533 /* Request.swift */; };
+		9C5D1FFD55126D2796328EA27E21FF12 /* ICrmBrandAwareness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5774D8BEE75628C0AE11BA13580A3BD4 /* ICrmBrandAwareness.swift */; };
+		9E90A9E9AB17126EA71C400BD47A2C4C /* IOrderPromotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0013E699977065776BBC58283F4D62F /* IOrderPromotion.swift */; };
+		A3D2979E7ABD0651ADD8232EA1341859 /* IProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = B25E629CA895C444ADA13BDB4C76B44D /* IProduct.swift */; };
+		A3DE38F8DB2025962DC915B330F8440F /* TekServiceInterfaces-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B07DC18280B71A559AE80250C7B2BD7A /* TekServiceInterfaces-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFC64B1097F7355FF423D6A73E9C7210 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4C04E1C8F40E82CEC26B152BB58AE3 /* TaskDelegate.swift */; };
+		BBA020A1C1C06C5146FBF589A60A527F /* IBenefit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A8E6B77575D8C5EE5D92BFA907C14 /* IBenefit.swift */; };
+		BEE6B677416CA71C981D1D3F60B18C96 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EB3AD384747A657C0417C7C95DB4AD8 /* Alamofire.swift */; };
+		BF4013926F5CCD9D72B09478357E13DA /* IShippingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5723E59DAE0565CE82825F74B0643740 /* IShippingInfo.swift */; };
+		C56FA304FCF20BA99274EF9CC14F68FC /* ICrmCustomer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08E097870B28FDC44A906E62C80B73D /* ICrmCustomer.swift */; };
+		CF06DB7E41950AFE2BA8D8604A8128C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		CF256A3C0D9C1D8056D3202B54BA5290 /* IOrderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3597BE595FC3ADA7EB106EA37F602305 /* IOrderService.swift */; };
+		D0DD5E77E70BBB903458C0E2829EDB2D /* ICrmInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412643CFA08396F41472168F593A0247 /* ICrmInformation.swift */; };
+		D3053CFC79DF370B9D3F279B963391FF /* IBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2A3BB23A1FFF5EA47D02245F91B821 /* IBlock.swift */; };
+		D3D8C379C6E4FB487E5ABD6800AD7B7E /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9137DD7C50056D3AC3FDF602AC5F23 /* DispatchQueue+Alamofire.swift */; };
+		D65C254F5ABF2CB5ECEE50FE8F8E1A80 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61EE03CEDE2EC72C035C40507E0B4235 /* Response.swift */; };
+		DA4DF912C6FB99A447CF03AFFBFFDCCC /* IAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C4870587169A29CEA572776ABD1F9E /* IAddress.swift */; };
+		DBE07D26F00B4DC85290C8318AC6F641 /* IBlockAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0324441467020F4A6E17D938013203E5 /* IBlockAttribute.swift */; };
+		DC6AB58305C41F8D22F7E994221D7206 /* IOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476E456E70327F6051865A9ED947408F /* IOrder.swift */; };
+		E3747EC31FCCA97D75A81FC700CF7E24 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86565F9647C07420C74950CA039AB906 /* ResponseSerialization.swift */; };
+		E3A11C90106D115F3E82FE8C113C1697 /* INotificationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D17CFE1E9602131CB4E69ED369E1F0 /* INotificationResult.swift */; };
+		E4B5D1EE51E25C8EA14A6E029806D27D /* ICondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F17123CB8AF84CA0F07929168F1391 /* ICondition.swift */; };
+		E5E1E8D1F8AD6BBE774983470596E9F9 /* IPpmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49B7360E407CF3EFC6351AFE417BEA2 /* IPpmService.swift */; };
+		E97D1B7BE11562B959BD47AE181D2A71 /* IBlockFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956434F1FD27696E1E7731108B0BFE72 /* IBlockFilter.swift */; };
+		EA3AD8FD51177CB827B5A6BF1285F78F /* IBlockItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005DA4CDBC311E343FD62A8A97103654 /* IBlockItem.swift */; };
+		EA5BF853821A7E157298DC77CB7AB270 /* Pods-TekCrmService-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BDDDCC8D082F284D6536F6A791144801 /* Pods-TekCrmService-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EAEAAC7D76F7CB823550CF87891183DA /* ICrmPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09648F0A19B6F774D5D03529AC946DED /* ICrmPayload.swift */; };
+		EDDAFA9EDEE2903F990AEC9990D390DC /* IService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307541EF21DA8ABFD12DB40121DE06AF /* IService.swift */; };
+		EE71EF5A89268BF687CCCABDB698D788 /* IOrderCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE703B6FB3D08E58CE9B6055B933CE70 /* IOrderCreator.swift */; };
+		F0D675958753A7E8680A97DE49591D00 /* IMarketChildOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593B662722F53F3B057780003EE7B20F /* IMarketChildOrder.swift */; };
+		F13F2AA7F2E6D95A181CAB99B900D531 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341DF2BC33A222DB950D87D245D1DC09 /* ServerTrustPolicy.swift */; };
+		F1548C5EED1FC386746F2033C23FBB80 /* ICrmError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126532640880D3A0D7A15C83FB38AEC8 /* ICrmError.swift */; };
+		F7B74645E07C39771156A1FA413B98D4 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F2319C93D50011904119047504FA2A6 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB198DF19D974F580755860C2D34690A /* TekServiceInterfaces-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 788C88D34B1998CF20E20B7A2548E986 /* TekServiceInterfaces-dummy.m */; };
+		FE0AC4922A15B846B1425251BD51C08B /* INotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4530BB3A3A056D6CAD26F7BD52C8DD1 /* INotification.swift */; };
+		FF5BB64AE147FB52814A8058C68E43E5 /* ICrmVat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97324503C6F9CF6816CDB667CEA3BFF3 /* ICrmVat.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1FD035889E879C591551FD98EBCEAA55 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F19DB2793B2E42C7E283F096E99C242;
+			remoteInfo = TekCoreService;
+		};
+		25D02C5078B19640DDFCBBE8AE7299EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBE8C14FBF96EFDFE3499F77CC023BC5;
+			remoteInfo = TekCoreNetwork;
+		};
+		5AC5E228A3ABD4B604CB9189A18E6431 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
+		6414CD915894037B00E4CD0F9DCC6F13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBE8C14FBF96EFDFE3499F77CC023BC5;
+			remoteInfo = TekCoreNetwork;
+		};
+		97E0CDDBCE99A317D74812D4A6826E12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD6B3D1A1A4C86C96695EA7372F32837;
+			remoteInfo = TekServiceInterfaces;
+		};
+		FB34E7D9EF087B5343221B4538ABC722 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		005DA4CDBC311E343FD62A8A97103654 /* IBlockItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IBlockItem.swift; path = TekServiceInterfaces/Classes/DiscoveryService/Models/IBlockItem.swift; sourceTree = "<group>"; };
+		0324441467020F4A6E17D938013203E5 /* IBlockAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IBlockAttribute.swift; path = TekServiceInterfaces/Classes/DiscoveryService/Models/IBlockAttribute.swift; sourceTree = "<group>"; };
+		0783E59341B088A3663D74BD192284A2 /* Pods_TekCrmService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TekCrmService.framework; path = "Pods-TekCrmService.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		09648F0A19B6F774D5D03529AC946DED /* ICrmPayload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ICrmPayload.swift; path = TekServiceInterfaces/Classes/CrmService/Models/ICrmPayload.swift; sourceTree = "<group>"; };
+		0AAD6DE1AB9A9E806A0D3F7214FF4C0C /* TekCoreService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TekCoreService.debug.xcconfig; sourceTree = "<group>"; };
+		0B56E2E2FA89EE8E867629E57AEFB44E /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		0BF75F5C39A7471D60D03737C1D09B3F /* IWard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IWard.swift; path = TekServiceInterfaces/Classes/LocationService/Models/IWard.swift; sourceTree = "<group>"; };
+		0C3043B411992511817735380354E4D8 /* IDiscoveryService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IDiscoveryService.swift; path = TekServiceInterfaces/Classes/DiscoveryService/IDiscoveryService.swift; sourceTree = "<group>"; };
+		0F02701F9B9D6599EA793BC51D0DB986 /* IShippingService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IShippingService.swift; path = TekServiceInterfaces/Classes/LocationService/Models/IShippingService.swift; sourceTree = "<group>"; };
+		0FDE96485AF94CBF8688F9B1FB5E7795 /* IExtraDataNotification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IExtraDataNotification.swift; path = TekServiceInterfaces/Classes/StnService/IModels/IExtraDataNotification.swift; sourceTree = "<group>"; };
+		1158A3D3772079F704FFBC987F7D8191 /* IDefinition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IDefinition.swift; path = TekServiceInterfaces/Classes/PPMService/Models/IDefinition.swift; sourceTree = "<group>"; };
+		11DE8C0060DD74B8F4E93E708F9EFACD /* TekCoreNetwork-Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TekCoreNetwork-Swift.h"; path = "TekCoreNetwork.framework/Headers/TekCoreNetwork-Swift.h"; sourceTree = "<group>"; };
+		126532640880D3A0D7A15C83FB38AEC8 /* ICrmError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ICrmError.swift; path = TekServiceInterfaces/Classes/CrmService/Models/ICrmError.swift; sourceTree = "<group>"; };
+		14372EACDE23626530ACFF7FA741747A /* IMoney.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMoney.swift; path = TekServiceInterfaces/Classes/PPMService/Models/IMoney.swift; sourceTree = "<group>"; };
+		14EE764F370525FC067ECDA0F981A886 /* TekServiceInterfaces-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TekServiceInterfaces-Info.plist"; sourceTree = "<group>"; };
+		1E04DA9F6D9BC293CD31D690DBE833E0 /* IBanner.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IBanner.swift; path = TekServiceInterfaces/Classes/PageBuilderService/IModels/IBanner.swift; sourceTree = "<group>"; };
+		223A57B581F3F20CA78B50B72E27014C /* IBannerResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IBannerResult.swift; path = TekServiceInterfaces/Classes/PageBuilderService/IModels/IBannerResult.swift; sourceTree = "<group>"; };
+		23AC53EC974884F32884271D363146E6 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		2A49276DC720274A4B4D89E533EE2313 /* TekCoreService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TekCoreService.h; path = TekCoreService.framework/Headers/TekCoreService.h; sourceTree = "<group>"; };
+		2E9137DD7C50056D3AC3FDF602AC5F23 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		307541EF21DA8ABFD12DB40121DE06AF /* IService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IService.swift; path = TekServiceInterfaces/Classes/OrderService/Models/IService.swift; sourceTree = "<group>"; };
+		30F5A086A3CF6B70BFFC57C0098D6074 /* Pods-TekCrmService-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TekCrmService-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3191320B52CE6EAE160EB041E6174A2A /* TekCoreNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TekCoreNetwork.framework; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		33D3E4D18BD2E26A4326A22036C40117 /* Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.debug.xcconfig; sourceTree = "<group>"; };
+		341DF2BC33A222DB950D87D245D1DC09 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		349DB36D5BE62073D29355C817BECDF7 /* Pods-TekCrmService.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TekCrmService.modulemap"; sourceTree = "<group>"; };
+		354497F700BC1101A388F90BCD10A15D /* IBlockResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IBlockResult.swift; path = TekServiceInterfaces/Classes/DiscoveryService/Models/IBlockResult.swift; sourceTree = "<group>"; };
+		3597BE595FC3ADA7EB106EA37F602305 /* IOrderService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IOrderService.swift; path = TekServiceInterfaces/Classes/OrderService/IOrderService.swift; sourceTree = "<group>"; };
+		3F2319C93D50011904119047504FA2A6 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		412643CFA08396F41472168F593A0247 /* ICrmInformation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ICrmInformation.swift; path = TekServiceInterfaces/Classes/CrmService/Models/ICrmInformation.swift; sourceTree = "<group>"; };
+		41C2B69BBE9CB7D898FFC8D502F583DD /* TekCoreService-Swift.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "TekCoreService-Swift.h"; path = "TekCoreService.framework/Headers/TekCoreService-Swift.h"; sourceTree = "<group>"; };
+		435E36CD4DE71A40E39C650C8860AA7C /* IBlockContent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IBlockContent.swift; path = TekServiceInterfaces/Classes/DiscoveryService/Models/IBlockContent.swift; sourceTree = "<group>"; };
+		4497D003FAE7A34884C021138663BBE0 /* TekCoreService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TekCoreService.release.xcconfig; sourceTree = "<group>"; };
+		476E456E70327F6051865A9ED947408F /* IOrder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IOrder.swift; path = TekServiceInterfaces/Classes/OrderService/Models/IOrder.swift; sourceTree = "<group>"; };
+		494773D11193B3668373AC79D2BAE342 /* TekServiceInterfaces.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TekServiceInterfaces.debug.xcconfig; sourceTree = "<group>"; };
+		527E37D368477338A1FF8D23A6BF7988 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		5723E59DAE0565CE82825F74B0643740 /* IShippingInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IShippingInfo.swift; path = TekServiceInterfaces/Classes/OrderService/Models/IShippingInfo.swift; sourceTree = "<group>"; };
+		5774D8BEE75628C0AE11BA13580A3BD4 /* ICrmBrandAwareness.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ICrmBrandAwareness.swift; path = TekServiceInterfaces/Classes/CrmService/Models/ICrmBrandAwareness.swift; sourceTree = "<group>"; };
+		593B662722F53F3B057780003EE7B20F /* IMarketChildOrder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IMarketChildOrder.swift; path = TekServiceInterfaces/Classes/OrderService/Models/IMarketChildOrder.swift; sourceTree = "<group>"; };
+		59D85D9C5EAC0433140B8BC9C7C60784 /* IApply.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IApply.swift; path = TekServiceInterfaces/Classes/OrderService/Models/IApply.swift; sourceTree = "<group>"; };
+		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E2A3BB23A1FFF5EA47D02245F91B821 /* IBlock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IBlock.swift; path = TekServiceInterfaces/Classes/DiscoveryService/Models/IBlock.swift; sourceTree = "<group>"; };
+		61EE03CEDE2EC72C035C40507E0B4235 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		64FFE206F02183A91441BFC6CC6F3FE2 /* Pods-TekCrmService-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TekCrmService-Info.plist"; sourceTree = "<group>"; };
+		6557CE30413482EFFD3C1025C2646AAE /* ITimeRange.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ITimeRange.swift; path = TekServiceInterfaces/Classes/PPMService/Models/ITimeRange.swift; sourceTree = "<group>"; };
+		65F352113F68488963B520A189C57316 /* IOrderNotificationData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IOrderNotificationData.swift; path = TekServiceInterfaces/Classes/StnService/IModels/IOrderNotificationData.swift; sourceTree = "<group>"; };
+		6A10CA3E2D1341D9171E2DCF88ADEC83 /* TekCoreNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TekCoreNetwork.debug.xcconfig; sourceTree = "<group>"; };
+		6A29BAFA41A63B157AE744BBEDAFF868 /* Pods-TekCrmService-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TekCrmService-dummy.m"; sourceTree = "<group>"; };
+		6A4AEF7427FC47CB3441045D9483A156 /* ICrmService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ICrmService.swift; path = TekServiceInterfaces/Classes/CrmService/ICrmService.swift; sourceTree = "<group>"; };
+		6C0254C62C348D559EAA97738962B1C7 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		6FD142679D0800189EC87018D82277DD /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Source/SessionManager.swift; sourceTree = "<group>"; };
+		71C504300B52C3BA1562FB426E99C4DB /* Pods-TekCrmService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TekCrmService.debug.xcconfig"; sourceTree = "<group>"; };
+		788C88D34B1998CF20E20B7A2548E986 /* TekServiceInterfaces-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TekServiceInterfaces-dummy.m"; sourceTree = "<group>"; };
+		7B5DFF6CEE4C555475E66A3BC5B409FC /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		7E54FF8A7619A137EAC6FF08FABA5CAE /* IOrderGift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IOrderGift.swift; path = TekServiceInterfaces/Classes/OrderService/Models/IOrderGift.swift; sourceTree = "<group>"; };
+		7F5A8E6B77575D8C5EE5D92BFA907C14 /* IBenefit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IBenefit.swift; path = TekServiceInterfaces/Classes/PPMService/Models/IBenefit.swift; sourceTree = "<group>"; };
+		86565F9647C07420C74950CA039AB906 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		87658AA06A2903ACE92F8F9804F5D427 /* ILocationService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ILocationService.swift; path = TekServiceInterfaces/Classes/LocationService/ILocationService.swift; sourceTree = "<group>"; };
+		87C81C6D58165273D54332BD70940A83 /* TekCoreNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TekCoreNetwork.release.xcconfig; sourceTree = "<group>"; };
+		8842F7F84E00D6B63AF0F596104DC283 /* IItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IItem.swift; path = TekServiceInterfaces/Classes/PPMService/Models/IItem.swift; sourceTree = "<group>"; };
+		8EE8754256BBD37048E5333833079533 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		926793B7A7CD38EBA9507769C93DF457 /* TekCoreService.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TekCoreService.framework; sourceTree = "<group>"; };
+		933E00521A1CAFD705344BDB69709F7E /* TekServiceInterfaces.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TekServiceInterfaces.framework; path = TekServiceInterfaces.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94FDD66E2927FC256C8578A4E08B93D6 /* ICrmBankAccount.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ICrmBankAccount.swift; path = TekServiceInterfaces/Classes/CrmService/Models/ICrmBankAccount.swift; sourceTree = "<group>"; };
+		956434F1FD27696E1E7731108B0BFE72 /* IBlockFilter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IBlockFilter.swift; path = TekServiceInterfaces/Classes/DiscoveryService/Models/IBlockFilter.swift; sourceTree = "<group>"; };
+		97324503C6F9CF6816CDB667CEA3BFF3 /* ICrmVat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ICrmVat.swift; path = TekServiceInterfaces/Classes/CrmService/Models/ICrmVat.swift; sourceTree = "<group>"; };
+		97D00D376E4379940E0BDF152D29E612 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		9AF60D74E228631EDE0FAF57499F1BED /* IStnService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IStnService.swift; path = TekServiceInterfaces/Classes/StnService/IStnService.swift; sourceTree = "<group>"; };
+		9CDBEEFE607883D8B7F82A8E3FBE3D9E /* Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.release.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EB3AD384747A657C0417C7C95DB4AD8 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		A08E097870B28FDC44A906E62C80B73D /* ICrmCustomer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ICrmCustomer.swift; path = TekServiceInterfaces/Classes/CrmService/Models/ICrmCustomer.swift; sourceTree = "<group>"; };
+		A0F17123CB8AF84CA0F07929168F1391 /* ICondition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ICondition.swift; path = TekServiceInterfaces/Classes/PPMService/Models/ICondition.swift; sourceTree = "<group>"; };
+		A6DEE884521C622920554AB5EA4782DD /* IVoucher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IVoucher.swift; path = TekServiceInterfaces/Classes/PPMService/Models/IVoucher.swift; sourceTree = "<group>"; };
+		AC0B69186677F6C643F64D751B1FFC59 /* IOrderVoucher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IOrderVoucher.swift; path = TekServiceInterfaces/Classes/OrderService/Models/IOrderVoucher.swift; sourceTree = "<group>"; };
+		ACDBDE819A7CA7CB8EA19D76D3769253 /* IOrderPaymentConfirmer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IOrderPaymentConfirmer.swift; path = TekServiceInterfaces/Classes/OrderService/Models/IOrderPaymentConfirmer.swift; sourceTree = "<group>"; };
+		AD4C04E1C8F40E82CEC26B152BB58AE3 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Source/TaskDelegate.swift; sourceTree = "<group>"; };
+		B07DC18280B71A559AE80250C7B2BD7A /* TekServiceInterfaces-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TekServiceInterfaces-umbrella.h"; sourceTree = "<group>"; };
+		B086250C0C9E0DF4F075F0BF9502C6E4 /* ISeller.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISeller.swift; path = TekServiceInterfaces/Classes/OrderService/Models/ISeller.swift; sourceTree = "<group>"; };
+		B25E629CA895C444ADA13BDB4C76B44D /* IProduct.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IProduct.swift; path = TekServiceInterfaces/Classes/OrderService/Models/IProduct.swift; sourceTree = "<group>"; };
+		B4C2ADB26233921C2B66F8EE2AA8A8DA /* IOrderItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IOrderItem.swift; path = TekServiceInterfaces/Classes/OrderService/Models/IOrderItem.swift; sourceTree = "<group>"; };
+		B571CE88A17B31141C020653FD3ABF61 /* TekServiceInterfaces.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TekServiceInterfaces.modulemap; sourceTree = "<group>"; };
+		B8C4870587169A29CEA572776ABD1F9E /* IAddress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IAddress.swift; path = TekServiceInterfaces/Classes/LocationService/Models/IAddress.swift; sourceTree = "<group>"; };
+		B9D46D6863736FEA0088BCA42DF6DAFA /* IOrderListItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IOrderListItem.swift; path = TekServiceInterfaces/Classes/OrderService/Models/IOrderListItem.swift; sourceTree = "<group>"; };
+		BD783620A7E81CD74D00461E77FDEBA5 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		BDDDCC8D082F284D6536F6A791144801 /* Pods-TekCrmService-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TekCrmService-umbrella.h"; sourceTree = "<group>"; };
+		C110C298262CFC5E5D043E95C579DC1E /* IBlockParams.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IBlockParams.swift; path = TekServiceInterfaces/Classes/DiscoveryService/Models/IBlockParams.swift; sourceTree = "<group>"; };
+		C49B7360E407CF3EFC6351AFE417BEA2 /* IPpmService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IPpmService.swift; path = TekServiceInterfaces/Classes/PPMService/IPpmService.swift; sourceTree = "<group>"; };
+		C4BF48461C513C2FEEFBEC6E253E62D4 /* ICrmContact.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ICrmContact.swift; path = TekServiceInterfaces/Classes/CrmService/Models/ICrmContact.swift; sourceTree = "<group>"; };
+		C59E011E513AD29488EB9F695C47ECCA /* TekCoreNetwork.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TekCoreNetwork.h; path = TekCoreNetwork.framework/Headers/TekCoreNetwork.h; sourceTree = "<group>"; };
+		CB00D0DB30BFAF18119706A5F8BA8FE8 /* IOrderListResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IOrderListResult.swift; path = TekServiceInterfaces/Classes/OrderService/Models/IOrderListResult.swift; sourceTree = "<group>"; };
+		D0013E699977065776BBC58283F4D62F /* IOrderPromotion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IOrderPromotion.swift; path = TekServiceInterfaces/Classes/OrderService/Models/IOrderPromotion.swift; sourceTree = "<group>"; };
+		D52687C86D8D676F4D1A924C645E3121 /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
+		D6CF6952AC9DD24463AA460BEFEE1E72 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		DF0F393DDF59F75820DAD8991ED52008 /* Pods-TekCrmService-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TekCrmService-acknowledgements.plist"; sourceTree = "<group>"; };
+		E0536AD0B5D58EA468FD0623FC0AB48A /* TekServiceInterfaces.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TekServiceInterfaces.release.xcconfig; sourceTree = "<group>"; };
+		E2081F5CB24FC4B92BDEED5DE6630977 /* Pods-TekCrmService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TekCrmService.release.xcconfig"; sourceTree = "<group>"; };
+		E26416FD86246903D71A2619F6EFE577 /* IOrderCustomer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IOrderCustomer.swift; path = TekServiceInterfaces/Classes/OrderService/Models/IOrderCustomer.swift; sourceTree = "<group>"; };
+		E27A767849D24C45011AE7728C788DC9 /* IBlockSorting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IBlockSorting.swift; path = TekServiceInterfaces/Classes/DiscoveryService/Models/IBlockSorting.swift; sourceTree = "<group>"; };
+		E31036B36CDF7B51D4BCAEC64A18360A /* IOrderPayment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IOrderPayment.swift; path = TekServiceInterfaces/Classes/OrderService/Models/IOrderPayment.swift; sourceTree = "<group>"; };
+		E4530BB3A3A056D6CAD26F7BD52C8DD1 /* INotification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = INotification.swift; path = TekServiceInterfaces/Classes/StnService/IModels/INotification.swift; sourceTree = "<group>"; };
+		E82BFD62F782CDFDF29FBF89713480B3 /* ICrmResponseMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ICrmResponseMessage.swift; path = TekServiceInterfaces/Classes/CrmService/Models/ICrmResponseMessage.swift; sourceTree = "<group>"; };
+		E85D33F7579DBCF42BDE5F2E433E29BE /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		EA6098D1DB008DC265C573861276155B /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
+		EE703B6FB3D08E58CE9B6055B933CE70 /* IOrderCreator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IOrderCreator.swift; path = TekServiceInterfaces/Classes/OrderService/Models/IOrderCreator.swift; sourceTree = "<group>"; };
+		F1D17CFE1E9602131CB4E69ED369E1F0 /* INotificationResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = INotificationResult.swift; path = TekServiceInterfaces/Classes/StnService/IModels/INotificationResult.swift; sourceTree = "<group>"; };
+		F1F892284ED1C814E45BA12926FD8697 /* IBillingInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IBillingInfo.swift; path = TekServiceInterfaces/Classes/OrderService/Models/IBillingInfo.swift; sourceTree = "<group>"; };
+		F20AE87D3A813BDC4419186D012BFB5D /* IAppliedPromotion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IAppliedPromotion.swift; path = TekServiceInterfaces/Classes/PPMService/Models/IAppliedPromotion.swift; sourceTree = "<group>"; };
+		F25DFDD76D79185AFD5F5FED2984811E /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
+		FD7BE990561801BBB8054BF5B1CBF1DF /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		FECFEB8C64A5E837F85F0F39F0F0D322 /* IPageBuilderService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IPageBuilderService.swift; path = TekServiceInterfaces/Classes/PageBuilderService/IPageBuilderService.swift; sourceTree = "<group>"; };
+		FF1E321E37AB74E1A9801BF2F37BF9DA /* TekServiceInterfaces-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TekServiceInterfaces-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		090C1D63463ACF622287EFF9D5C9392D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7664FD4F59A0C00866CBAE60B0A3AD64 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		880C0385157942498DB2DBE0A1D003F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047F10D7EFFB93781D53A3D30BC672E3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9085EDB3F1A118DE991ED1F3B4FE1E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF06DB7E41950AFE2BA8D8604A8128C9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04F4AC6ABD33510229117AD3D175BB94 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E85D33F7579DBCF42BDE5F2E433E29BE /* Alamofire.modulemap */,
+				FD7BE990561801BBB8054BF5B1CBF1DF /* Alamofire-dummy.m */,
+				D52687C86D8D676F4D1A924C645E3121 /* Alamofire-Info.plist */,
+				97D00D376E4379940E0BDF152D29E612 /* Alamofire-prefix.pch */,
+				3F2319C93D50011904119047504FA2A6 /* Alamofire-umbrella.h */,
+				33D3E4D18BD2E26A4326A22036C40117 /* Alamofire.debug.xcconfig */,
+				9CDBEEFE607883D8B7F82A8E3FBE3D9E /* Alamofire.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		0E08EC4A3C3B72373F25E8C168377D61 /* TekCoreNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				C59E011E513AD29488EB9F695C47ECCA /* TekCoreNetwork.h */,
+				11DE8C0060DD74B8F4E93E708F9EFACD /* TekCoreNetwork-Swift.h */,
+				E9FED19228365AC990CEE46CFA99B974 /* Frameworks */,
+				1D29EC09184A2FAA6696C19734144761 /* Support Files */,
+			);
+			name = TekCoreNetwork;
+			path = TekCoreNetwork;
+			sourceTree = "<group>";
+		};
+		13484A16E2D05B340013B98D2AA79283 /* TekServiceInterfaces */ = {
+			isa = PBXGroup;
+			children = (
+				B8C4870587169A29CEA572776ABD1F9E /* IAddress.swift */,
+				F20AE87D3A813BDC4419186D012BFB5D /* IAppliedPromotion.swift */,
+				59D85D9C5EAC0433140B8BC9C7C60784 /* IApply.swift */,
+				1E04DA9F6D9BC293CD31D690DBE833E0 /* IBanner.swift */,
+				223A57B581F3F20CA78B50B72E27014C /* IBannerResult.swift */,
+				7F5A8E6B77575D8C5EE5D92BFA907C14 /* IBenefit.swift */,
+				F1F892284ED1C814E45BA12926FD8697 /* IBillingInfo.swift */,
+				5E2A3BB23A1FFF5EA47D02245F91B821 /* IBlock.swift */,
+				0324441467020F4A6E17D938013203E5 /* IBlockAttribute.swift */,
+				435E36CD4DE71A40E39C650C8860AA7C /* IBlockContent.swift */,
+				956434F1FD27696E1E7731108B0BFE72 /* IBlockFilter.swift */,
+				005DA4CDBC311E343FD62A8A97103654 /* IBlockItem.swift */,
+				C110C298262CFC5E5D043E95C579DC1E /* IBlockParams.swift */,
+				354497F700BC1101A388F90BCD10A15D /* IBlockResult.swift */,
+				E27A767849D24C45011AE7728C788DC9 /* IBlockSorting.swift */,
+				A0F17123CB8AF84CA0F07929168F1391 /* ICondition.swift */,
+				94FDD66E2927FC256C8578A4E08B93D6 /* ICrmBankAccount.swift */,
+				5774D8BEE75628C0AE11BA13580A3BD4 /* ICrmBrandAwareness.swift */,
+				C4BF48461C513C2FEEFBEC6E253E62D4 /* ICrmContact.swift */,
+				A08E097870B28FDC44A906E62C80B73D /* ICrmCustomer.swift */,
+				126532640880D3A0D7A15C83FB38AEC8 /* ICrmError.swift */,
+				412643CFA08396F41472168F593A0247 /* ICrmInformation.swift */,
+				09648F0A19B6F774D5D03529AC946DED /* ICrmPayload.swift */,
+				E82BFD62F782CDFDF29FBF89713480B3 /* ICrmResponseMessage.swift */,
+				6A4AEF7427FC47CB3441045D9483A156 /* ICrmService.swift */,
+				97324503C6F9CF6816CDB667CEA3BFF3 /* ICrmVat.swift */,
+				1158A3D3772079F704FFBC987F7D8191 /* IDefinition.swift */,
+				0C3043B411992511817735380354E4D8 /* IDiscoveryService.swift */,
+				0FDE96485AF94CBF8688F9B1FB5E7795 /* IExtraDataNotification.swift */,
+				8842F7F84E00D6B63AF0F596104DC283 /* IItem.swift */,
+				87658AA06A2903ACE92F8F9804F5D427 /* ILocationService.swift */,
+				593B662722F53F3B057780003EE7B20F /* IMarketChildOrder.swift */,
+				14372EACDE23626530ACFF7FA741747A /* IMoney.swift */,
+				E4530BB3A3A056D6CAD26F7BD52C8DD1 /* INotification.swift */,
+				F1D17CFE1E9602131CB4E69ED369E1F0 /* INotificationResult.swift */,
+				476E456E70327F6051865A9ED947408F /* IOrder.swift */,
+				EE703B6FB3D08E58CE9B6055B933CE70 /* IOrderCreator.swift */,
+				E26416FD86246903D71A2619F6EFE577 /* IOrderCustomer.swift */,
+				7E54FF8A7619A137EAC6FF08FABA5CAE /* IOrderGift.swift */,
+				B4C2ADB26233921C2B66F8EE2AA8A8DA /* IOrderItem.swift */,
+				B9D46D6863736FEA0088BCA42DF6DAFA /* IOrderListItem.swift */,
+				CB00D0DB30BFAF18119706A5F8BA8FE8 /* IOrderListResult.swift */,
+				65F352113F68488963B520A189C57316 /* IOrderNotificationData.swift */,
+				E31036B36CDF7B51D4BCAEC64A18360A /* IOrderPayment.swift */,
+				ACDBDE819A7CA7CB8EA19D76D3769253 /* IOrderPaymentConfirmer.swift */,
+				D0013E699977065776BBC58283F4D62F /* IOrderPromotion.swift */,
+				3597BE595FC3ADA7EB106EA37F602305 /* IOrderService.swift */,
+				AC0B69186677F6C643F64D751B1FFC59 /* IOrderVoucher.swift */,
+				FECFEB8C64A5E837F85F0F39F0F0D322 /* IPageBuilderService.swift */,
+				C49B7360E407CF3EFC6351AFE417BEA2 /* IPpmService.swift */,
+				B25E629CA895C444ADA13BDB4C76B44D /* IProduct.swift */,
+				B086250C0C9E0DF4F075F0BF9502C6E4 /* ISeller.swift */,
+				307541EF21DA8ABFD12DB40121DE06AF /* IService.swift */,
+				5723E59DAE0565CE82825F74B0643740 /* IShippingInfo.swift */,
+				0F02701F9B9D6599EA793BC51D0DB986 /* IShippingService.swift */,
+				9AF60D74E228631EDE0FAF57499F1BED /* IStnService.swift */,
+				6557CE30413482EFFD3C1025C2646AAE /* ITimeRange.swift */,
+				A6DEE884521C622920554AB5EA4782DD /* IVoucher.swift */,
+				0BF75F5C39A7471D60D03737C1D09B3F /* IWard.swift */,
+				D003DCBDD326528529A1928B6ACC9DC7 /* Support Files */,
+			);
+			name = TekServiceInterfaces;
+			path = TekServiceInterfaces;
+			sourceTree = "<group>";
+		};
+		1D29EC09184A2FAA6696C19734144761 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A10CA3E2D1341D9171E2DCF88ADEC83 /* TekCoreNetwork.debug.xcconfig */,
+				87C81C6D58165273D54332BD70940A83 /* TekCoreNetwork.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TekCoreNetwork";
+			sourceTree = "<group>";
+		};
+		2AE979661E6B979B56DDEA53F16C192F /* Pods-TekCrmService */ = {
+			isa = PBXGroup;
+			children = (
+				349DB36D5BE62073D29355C817BECDF7 /* Pods-TekCrmService.modulemap */,
+				30F5A086A3CF6B70BFFC57C0098D6074 /* Pods-TekCrmService-acknowledgements.markdown */,
+				DF0F393DDF59F75820DAD8991ED52008 /* Pods-TekCrmService-acknowledgements.plist */,
+				6A29BAFA41A63B157AE744BBEDAFF868 /* Pods-TekCrmService-dummy.m */,
+				64FFE206F02183A91441BFC6CC6F3FE2 /* Pods-TekCrmService-Info.plist */,
+				BDDDCC8D082F284D6536F6A791144801 /* Pods-TekCrmService-umbrella.h */,
+				71C504300B52C3BA1562FB426E99C4DB /* Pods-TekCrmService.debug.xcconfig */,
+				E2081F5CB24FC4B92BDEED5DE6630977 /* Pods-TekCrmService.release.xcconfig */,
+			);
+			name = "Pods-TekCrmService";
+			path = "Target Support Files/Pods-TekCrmService";
+			sourceTree = "<group>";
+		};
+		5A330ACF573C956B9E65511EF41296EC /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				F25DFDD76D79185AFD5F5FED2984811E /* AFError.swift */,
+				9EB3AD384747A657C0417C7C95DB4AD8 /* Alamofire.swift */,
+				2E9137DD7C50056D3AC3FDF602AC5F23 /* DispatchQueue+Alamofire.swift */,
+				6C0254C62C348D559EAA97738962B1C7 /* MultipartFormData.swift */,
+				BD783620A7E81CD74D00461E77FDEBA5 /* NetworkReachabilityManager.swift */,
+				23AC53EC974884F32884271D363146E6 /* Notifications.swift */,
+				7B5DFF6CEE4C555475E66A3BC5B409FC /* ParameterEncoding.swift */,
+				8EE8754256BBD37048E5333833079533 /* Request.swift */,
+				61EE03CEDE2EC72C035C40507E0B4235 /* Response.swift */,
+				86565F9647C07420C74950CA039AB906 /* ResponseSerialization.swift */,
+				527E37D368477338A1FF8D23A6BF7988 /* Result.swift */,
+				341DF2BC33A222DB950D87D245D1DC09 /* ServerTrustPolicy.swift */,
+				EA6098D1DB008DC265C573861276155B /* SessionDelegate.swift */,
+				6FD142679D0800189EC87018D82277DD /* SessionManager.swift */,
+				AD4C04E1C8F40E82CEC26B152BB58AE3 /* TaskDelegate.swift */,
+				0B56E2E2FA89EE8E867629E57AEFB44E /* Timeline.swift */,
+				D6CF6952AC9DD24463AA460BEFEE1E72 /* Validation.swift */,
+				04F4AC6ABD33510229117AD3D175BB94 /* Support Files */,
+			);
+			name = Alamofire;
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		84458AF6BB119CF80F9F5E10127B28FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A330ACF573C956B9E65511EF41296EC /* Alamofire */,
+				0E08EC4A3C3B72373F25E8C168377D61 /* TekCoreNetwork */,
+				DF7ED24E4000BB345E3DF9F22FAA4065 /* TekCoreService */,
+				13484A16E2D05B340013B98D2AA79283 /* TekServiceInterfaces */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8513F05117A9D4DF38E7C61A672307B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				926793B7A7CD38EBA9507769C93DF457 /* TekCoreService.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8ACDD5F24FB7F3EA4BAD1D54089B7AA8 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2AE979661E6B979B56DDEA53F16C192F /* Pods-TekCrmService */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		8E4E7C6EC143870C63C11D879BD11644 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */,
+				0783E59341B088A3663D74BD192284A2 /* Pods_TekCrmService.framework */,
+				933E00521A1CAFD705344BDB69709F7E /* TekServiceInterfaces.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE135E3212F2FAB3A568FA1B79F96F22 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0AAD6DE1AB9A9E806A0D3F7214FF4C0C /* TekCoreService.debug.xcconfig */,
+				4497D003FAE7A34884C021138663BBE0 /* TekCoreService.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TekCoreService";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				84458AF6BB119CF80F9F5E10127B28FB /* Pods */,
+				8E4E7C6EC143870C63C11D879BD11644 /* Products */,
+				8ACDD5F24FB7F3EA4BAD1D54089B7AA8 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D003DCBDD326528529A1928B6ACC9DC7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B571CE88A17B31141C020653FD3ABF61 /* TekServiceInterfaces.modulemap */,
+				788C88D34B1998CF20E20B7A2548E986 /* TekServiceInterfaces-dummy.m */,
+				14EE764F370525FC067ECDA0F981A886 /* TekServiceInterfaces-Info.plist */,
+				FF1E321E37AB74E1A9801BF2F37BF9DA /* TekServiceInterfaces-prefix.pch */,
+				B07DC18280B71A559AE80250C7B2BD7A /* TekServiceInterfaces-umbrella.h */,
+				494773D11193B3668373AC79D2BAE342 /* TekServiceInterfaces.debug.xcconfig */,
+				E0536AD0B5D58EA468FD0623FC0AB48A /* TekServiceInterfaces.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/TekServiceInterfaces";
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF7ED24E4000BB345E3DF9F22FAA4065 /* TekCoreService */ = {
+			isa = PBXGroup;
+			children = (
+				2A49276DC720274A4B4D89E533EE2313 /* TekCoreService.h */,
+				41C2B69BBE9CB7D898FFC8D502F583DD /* TekCoreService-Swift.h */,
+				8513F05117A9D4DF38E7C61A672307B3 /* Frameworks */,
+				BE135E3212F2FAB3A568FA1B79F96F22 /* Support Files */,
+			);
+			name = TekCoreService;
+			path = TekCoreService;
+			sourceTree = "<group>";
+		};
+		E9FED19228365AC990CEE46CFA99B974 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3191320B52CE6EAE160EB041E6174A2A /* TekCoreNetwork.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		013C8777814E321F2B56FF0EFAA840F8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3DE38F8DB2025962DC915B330F8440F /* TekServiceInterfaces-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2582784E4FA6A1AC5D23FC53AC3F6EE2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7B74645E07C39771156A1FA413B98D4 /* Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFBE10F86194761DE7054BD311815D82 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA5BF853821A7E157298DC77CB7AB270 /* Pods-TekCrmService-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8B6EC10DF0966B242564D414661F6859 /* Pods-TekCrmService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E74BF50DE2E39A72E398DDB7914F1EDC /* Build configuration list for PBXNativeTarget "Pods-TekCrmService" */;
+			buildPhases = (
+				CFBE10F86194761DE7054BD311815D82 /* Headers */,
+				72A798E7DA7BD12C08E08086819BDC24 /* Sources */,
+				880C0385157942498DB2DBE0A1D003F2 /* Frameworks */,
+				DFFADB52FF6EFCEE3DEEE86099DE86C4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7035DE0EF7998FDD2F381675B5627F37 /* PBXTargetDependency */,
+				D2CD21DAF11A8A44D601B7B2E1797864 /* PBXTargetDependency */,
+				24BDCD7845063EB92E958C65DC3961E5 /* PBXTargetDependency */,
+				D8E4BA52556E88B3AA398E9AAD3BED86 /* PBXTargetDependency */,
+			);
+			name = "Pods-TekCrmService";
+			productName = "Pods-TekCrmService";
+			productReference = 0783E59341B088A3663D74BD192284A2 /* Pods_TekCrmService.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4A5194ABAF7A4780609E0E581DA6B54 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				2582784E4FA6A1AC5D23FC53AC3F6EE2 /* Headers */,
+				2DDFD9AC10F181CD7130BDF5F9E0502B /* Sources */,
+				090C1D63463ACF622287EFF9D5C9392D /* Frameworks */,
+				473D3E892ABB6C798CFF290644259B34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 5D797E9A5C5782CE845840781FA1CC81 /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FD6B3D1A1A4C86C96695EA7372F32837 /* TekServiceInterfaces */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D235D4D453ACD555E92696E92FFE607E /* Build configuration list for PBXNativeTarget "TekServiceInterfaces" */;
+			buildPhases = (
+				013C8777814E321F2B56FF0EFAA840F8 /* Headers */,
+				680EBB8396673EB41E652CA63955BE9A /* Sources */,
+				D9085EDB3F1A118DE991ED1F3B4FE1E8 /* Frameworks */,
+				9A0C24D3D117A768372F21379E801978 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TekServiceInterfaces;
+			productName = TekServiceInterfaces;
+			productReference = 933E00521A1CAFD705344BDB69709F7E /* TekServiceInterfaces.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 8E4E7C6EC143870C63C11D879BD11644 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */,
+				8B6EC10DF0966B242564D414661F6859 /* Pods-TekCrmService */,
+				FBE8C14FBF96EFDFE3499F77CC023BC5 /* TekCoreNetwork */,
+				6F19DB2793B2E42C7E283F096E99C242 /* TekCoreService */,
+				FD6B3D1A1A4C86C96695EA7372F32837 /* TekServiceInterfaces */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		473D3E892ABB6C798CFF290644259B34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A0C24D3D117A768372F21379E801978 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFFADB52FF6EFCEE3DEEE86099DE86C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DDFD9AC10F181CD7130BDF5F9E0502B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83956E20859CDBBE7BC38ABADE0170FB /* AFError.swift in Sources */,
+				1945CD5D63A1C164AEAAA9A33E85571E /* Alamofire-dummy.m in Sources */,
+				BEE6B677416CA71C981D1D3F60B18C96 /* Alamofire.swift in Sources */,
+				D3D8C379C6E4FB487E5ABD6800AD7B7E /* DispatchQueue+Alamofire.swift in Sources */,
+				1986B50C74F1697EA43F68335C93CEB3 /* MultipartFormData.swift in Sources */,
+				3571F958A3907B3A806E62D50C2550D4 /* NetworkReachabilityManager.swift in Sources */,
+				132E0F619E4338E5D1B27E4C72076B3F /* Notifications.swift in Sources */,
+				0C5E11DE24DAA737704B355F5F2F3426 /* ParameterEncoding.swift in Sources */,
+				98A929C8E9012AB167672714FFD2113C /* Request.swift in Sources */,
+				D65C254F5ABF2CB5ECEE50FE8F8E1A80 /* Response.swift in Sources */,
+				E3747EC31FCCA97D75A81FC700CF7E24 /* ResponseSerialization.swift in Sources */,
+				64744C911253C3E01461FAD7C935C8D7 /* Result.swift in Sources */,
+				F13F2AA7F2E6D95A181CAB99B900D531 /* ServerTrustPolicy.swift in Sources */,
+				2C61B040BA6A9A7AE66C4D9BA26D5520 /* SessionDelegate.swift in Sources */,
+				931BBB8230A25161D5C37528A8F9FECF /* SessionManager.swift in Sources */,
+				AFC64B1097F7355FF423D6A73E9C7210 /* TaskDelegate.swift in Sources */,
+				933FDA5970AA525D6CB92BFEBA2BAB4A /* Timeline.swift in Sources */,
+				53791F5E5F07400F92CFDFC89A432305 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		680EBB8396673EB41E652CA63955BE9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA4DF912C6FB99A447CF03AFFBFFDCCC /* IAddress.swift in Sources */,
+				943314DAEA73E7E9F2506B5109841924 /* IAppliedPromotion.swift in Sources */,
+				7AF47DE8E3C9CA251BA13067C5D0E604 /* IApply.swift in Sources */,
+				3044DDB05307FFA9CDB137EAB4BCB7AB /* IBanner.swift in Sources */,
+				1A530CDDF58E8A54EE7124F9F87F49B2 /* IBannerResult.swift in Sources */,
+				BBA020A1C1C06C5146FBF589A60A527F /* IBenefit.swift in Sources */,
+				5AF4FB0E25847690B401C66153192B7A /* IBillingInfo.swift in Sources */,
+				D3053CFC79DF370B9D3F279B963391FF /* IBlock.swift in Sources */,
+				DBE07D26F00B4DC85290C8318AC6F641 /* IBlockAttribute.swift in Sources */,
+				3292802F5D6CEF18A8DCAF9BAFC902B0 /* IBlockContent.swift in Sources */,
+				E97D1B7BE11562B959BD47AE181D2A71 /* IBlockFilter.swift in Sources */,
+				EA3AD8FD51177CB827B5A6BF1285F78F /* IBlockItem.swift in Sources */,
+				174782184DF0E286714C7D0A61EB3ED6 /* IBlockParams.swift in Sources */,
+				8318DE4D8D6A8F38A3C76EEB66590BD1 /* IBlockResult.swift in Sources */,
+				73A135D11C1AD1EDD538CB9FC8CD9F4E /* IBlockSorting.swift in Sources */,
+				E4B5D1EE51E25C8EA14A6E029806D27D /* ICondition.swift in Sources */,
+				5B97145124AE6C95C2149C76A9C54E9E /* ICrmBankAccount.swift in Sources */,
+				9C5D1FFD55126D2796328EA27E21FF12 /* ICrmBrandAwareness.swift in Sources */,
+				8082BDD36214E7A6C85CC8B9C8C767BD /* ICrmContact.swift in Sources */,
+				C56FA304FCF20BA99274EF9CC14F68FC /* ICrmCustomer.swift in Sources */,
+				F1548C5EED1FC386746F2033C23FBB80 /* ICrmError.swift in Sources */,
+				D0DD5E77E70BBB903458C0E2829EDB2D /* ICrmInformation.swift in Sources */,
+				EAEAAC7D76F7CB823550CF87891183DA /* ICrmPayload.swift in Sources */,
+				16D59E98F8E25982F7FCB833EB600D60 /* ICrmResponseMessage.swift in Sources */,
+				2266DA79133F656E087082CB9B1B3960 /* ICrmService.swift in Sources */,
+				FF5BB64AE147FB52814A8058C68E43E5 /* ICrmVat.swift in Sources */,
+				1DB2C6A53719EB7EDD74C5FE5141BEBD /* IDefinition.swift in Sources */,
+				804DBE7830B3F0ABBF0E9DF8D96527EA /* IDiscoveryService.swift in Sources */,
+				88C22EC0DFA9DDB911FDCE1ECE8939AF /* IExtraDataNotification.swift in Sources */,
+				779C9141B55ADFA0342E498995E77021 /* IItem.swift in Sources */,
+				3C5D57774CB043CCB6EC2493D4651017 /* ILocationService.swift in Sources */,
+				F0D675958753A7E8680A97DE49591D00 /* IMarketChildOrder.swift in Sources */,
+				23E092956E56C1E6A913D38879289E27 /* IMoney.swift in Sources */,
+				FE0AC4922A15B846B1425251BD51C08B /* INotification.swift in Sources */,
+				E3A11C90106D115F3E82FE8C113C1697 /* INotificationResult.swift in Sources */,
+				DC6AB58305C41F8D22F7E994221D7206 /* IOrder.swift in Sources */,
+				EE71EF5A89268BF687CCCABDB698D788 /* IOrderCreator.swift in Sources */,
+				0FD9534855DBE3470469605A1BB2599D /* IOrderCustomer.swift in Sources */,
+				87EA9139AA0CC1676E882410054CFCFF /* IOrderGift.swift in Sources */,
+				1383D3A219E22D98948C397ADFB7DFF8 /* IOrderItem.swift in Sources */,
+				6B67100343152EA59D30BE5F721122C4 /* IOrderListItem.swift in Sources */,
+				3CAF93FBD25BB46138C979F8313E9547 /* IOrderListResult.swift in Sources */,
+				0FE751FC96F5B9487600BC460208D40C /* IOrderNotificationData.swift in Sources */,
+				1DC2CBF0F0C900420D3427FAB4D9C42C /* IOrderPayment.swift in Sources */,
+				253C023D93D9296E12B5E81728AB7A10 /* IOrderPaymentConfirmer.swift in Sources */,
+				9E90A9E9AB17126EA71C400BD47A2C4C /* IOrderPromotion.swift in Sources */,
+				CF256A3C0D9C1D8056D3202B54BA5290 /* IOrderService.swift in Sources */,
+				7F28517DA4C1C8A158E03C7581597A35 /* IOrderVoucher.swift in Sources */,
+				0D987C68D68FE22E5A126BC5CAA53E5C /* IPageBuilderService.swift in Sources */,
+				E5E1E8D1F8AD6BBE774983470596E9F9 /* IPpmService.swift in Sources */,
+				A3D2979E7ABD0651ADD8232EA1341859 /* IProduct.swift in Sources */,
+				6EA88485C331B75B9275E047DB962809 /* ISeller.swift in Sources */,
+				EDDAFA9EDEE2903F990AEC9990D390DC /* IService.swift in Sources */,
+				BF4013926F5CCD9D72B09478357E13DA /* IShippingInfo.swift in Sources */,
+				153CCB96BFE650A4F5490219DB78998A /* IShippingService.swift in Sources */,
+				1F9D50D6D5F0BDDBD564C8EEDCB5BDFB /* IStnService.swift in Sources */,
+				93C3FA2A1AD7929FA69BF3B8D6E65D97 /* ITimeRange.swift in Sources */,
+				1842871B06913986CF4DF8D11EA65685 /* IVoucher.swift in Sources */,
+				597C0C5CD81B3C14B04190F0034082CB /* IWard.swift in Sources */,
+				FB198DF19D974F580755860C2D34690A /* TekServiceInterfaces-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72A798E7DA7BD12C08E08086819BDC24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0139689523DA17D5A7FC3F38192075E5 /* Pods-TekCrmService-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07555F664FAF602320F3FA6DCAEA95C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TekCoreNetwork;
+			target = FBE8C14FBF96EFDFE3499F77CC023BC5 /* TekCoreNetwork */;
+			targetProxy = 6414CD915894037B00E4CD0F9DCC6F13 /* PBXContainerItemProxy */;
+		};
+		24BDCD7845063EB92E958C65DC3961E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TekCoreService;
+			target = 6F19DB2793B2E42C7E283F096E99C242 /* TekCoreService */;
+			targetProxy = 1FD035889E879C591551FD98EBCEAA55 /* PBXContainerItemProxy */;
+		};
+		39FB0134F0AF7D78B29B44860947ABFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = 5AC5E228A3ABD4B604CB9189A18E6431 /* PBXContainerItemProxy */;
+		};
+		7035DE0EF7998FDD2F381675B5627F37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = FB34E7D9EF087B5343221B4538ABC722 /* PBXContainerItemProxy */;
+		};
+		D2CD21DAF11A8A44D601B7B2E1797864 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TekCoreNetwork;
+			target = FBE8C14FBF96EFDFE3499F77CC023BC5 /* TekCoreNetwork */;
+			targetProxy = 25D02C5078B19640DDFCBBE8AE7299EB /* PBXContainerItemProxy */;
+		};
+		D8E4BA52556E88B3AA398E9AAD3BED86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TekServiceInterfaces;
+			target = FD6B3D1A1A4C86C96695EA7372F32837 /* TekServiceInterfaces */;
+			targetProxy = 97E0CDDBCE99A317D74812D4A6826E12 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		13967C5C8F4B10B3EE4D6C208A0A7BEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		1798ED558D58153CCFF8B388064D2BD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71C504300B52C3BA1562FB426E99C4DB /* Pods-TekCrmService.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = marker;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TekCrmService/Pods-TekCrmService-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TekCrmService/Pods-TekCrmService.modulemap";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode-marker",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2B8AA529AE94A38970B63FEE0C046477 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 494773D11193B3668373AC79D2BAE342 /* TekServiceInterfaces.debug.xcconfig */;
+			buildSettings = {
+				BITCODE_GENERATION_MODE = marker;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TekServiceInterfaces/TekServiceInterfaces-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TekServiceInterfaces/TekServiceInterfaces-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TekServiceInterfaces/TekServiceInterfaces.modulemap";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode-marker",
+				);
+				PRODUCT_MODULE_NAME = TekServiceInterfaces;
+				PRODUCT_NAME = TekServiceInterfaces;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2EA5A4099D3BBA09D06A8B51C14CA714 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CDBEEFE607883D8B7F82A8E3FBE3D9E /* Alamofire.release.xcconfig */;
+			buildSettings = {
+				BITCODE_GENERATION_MODE = bitcode;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode",
+				);
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4FFEAF22B2468366F694BD329167E09D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4497D003FAE7A34884C021138663BBE0 /* TekCoreService.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
+			};
+			name = Release;
+		};
+		6582560CD340B3DAA031B8A7B818D890 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A10CA3E2D1341D9171E2DCF88ADEC83 /* TekCoreNetwork.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BITCODE_GENERATION_MODE = marker;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode-marker",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
+			};
+			name = Debug;
+		};
+		7B31C067AD23D9F4FC1860E7240F6165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87C81C6D58165273D54332BD70940A83 /* TekCoreNetwork.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
+			};
+			name = Release;
+		};
+		7FCF861759F4F142B265FBDE16071D83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0536AD0B5D58EA468FD0623FC0AB48A /* TekServiceInterfaces.release.xcconfig */;
+			buildSettings = {
+				BITCODE_GENERATION_MODE = bitcode;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TekServiceInterfaces/TekServiceInterfaces-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TekServiceInterfaces/TekServiceInterfaces-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/TekServiceInterfaces/TekServiceInterfaces.modulemap";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode",
+				);
+				PRODUCT_MODULE_NAME = TekServiceInterfaces;
+				PRODUCT_NAME = TekServiceInterfaces;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		871B6E28ABA34DAE69824AB9D22D3B7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		B263CDD38FE1FA636E054C745B64E211 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AAD6DE1AB9A9E806A0D3F7214FF4C0C /* TekCoreService.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BITCODE_GENERATION_MODE = marker;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode-marker",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
+			};
+			name = Debug;
+		};
+		DF8DAA9B09B99B7FF50B2EFB46FC0B74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2081F5CB24FC4B92BDEED5DE6630977 /* Pods-TekCrmService.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				BITCODE_GENERATION_MODE = bitcode;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-TekCrmService/Pods-TekCrmService-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TekCrmService/Pods-TekCrmService.modulemap";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode",
+				);
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E8FFFC6D27B58721BFB227F1311494ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33D3E4D18BD2E26A4326A22036C40117 /* Alamofire.debug.xcconfig */;
+			buildSettings = {
+				BITCODE_GENERATION_MODE = marker;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Alamofire-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-fembed-bitcode-marker",
+				);
+				PRODUCT_MODULE_NAME = Alamofire;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13967C5C8F4B10B3EE4D6C208A0A7BEB /* Debug */,
+				871B6E28ABA34DAE69824AB9D22D3B7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50C159F4CE34BDCB068E8CE1B1121862 /* Build configuration list for PBXAggregateTarget "TekCoreNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6582560CD340B3DAA031B8A7B818D890 /* Debug */,
+				7B31C067AD23D9F4FC1860E7240F6165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D235D4D453ACD555E92696E92FFE607E /* Build configuration list for PBXNativeTarget "TekServiceInterfaces" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B8AA529AE94A38970B63FEE0C046477 /* Debug */,
+				7FCF861759F4F142B265FBDE16071D83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4A5194ABAF7A4780609E0E581DA6B54 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8FFFC6D27B58721BFB227F1311494ED /* Debug */,
+				2EA5A4099D3BBA09D06A8B51C14CA714 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E74BF50DE2E39A72E398DDB7914F1EDC /* Build configuration list for PBXNativeTarget "Pods-TekCrmService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1798ED558D58153CCFF8B388064D2BD7 /* Debug */,
+				DF8DAA9B09B99B7FF50B2EFB46FC0B74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC4446A26E9EF55ED9610D48EBE2FF46 /* Build configuration list for PBXAggregateTarget "TekCoreService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B263CDD38FE1FA636E054C745B64E211 /* Debug */,
+				4FFEAF22B2468366F694BD329167E09D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
