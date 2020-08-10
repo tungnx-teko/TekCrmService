@@ -46,7 +46,7 @@ extension CrmRequest: BaseRequestProtocol {
     var encoder: APIParamEncoder {
         switch requestType {
         case .getCustomer:
-            return .singleParams([:], encoding: JSONParamEncoding.default)
+            return .singleParams([:], encoding: URLParamEncoding.default)
         case .create(let payload):
             return .singleParams(payload.payloadDict ?? [:], encoding: JSONParamEncoding.default)
         case .addContact(_, let contact):
@@ -75,6 +75,10 @@ extension CrmRequest: BaseRequestProtocol {
     
     var hasToken: Bool {
         return false
+    }
+    
+    var headers: APIHeaders? {
+        return [:]
     }
     
 }
