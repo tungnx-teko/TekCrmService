@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		05A0BFBDA4FB4BCED4426CB3 /* Pods_TekCrmService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20C5F686EEFE898E650C3EF1 /* Pods_TekCrmService.framework */; };
 		1A7FC08B24E0ED1200B90FE1 /* TekCrmService.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A7FC08924E0ED1200B90FE1 /* TekCrmService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1A7FC09724E0F4C300B90FE1 /* CrmRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7FC09624E0F4C300B90FE1 /* CrmRequest.swift */; };
 		1A7FC09924E1022E00B90FE1 /* CrmResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7FC09824E1022E00B90FE1 /* CrmResponse.swift */; };
@@ -36,11 +37,9 @@
 		1A7FC0AD24E1276F00B90FE1 /* CrmPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7FC0AC24E1276F00B90FE1 /* CrmPayload.swift */; };
 		1A7FC0B024E129E600B90FE1 /* CrmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7FC0AF24E129E600B90FE1 /* CrmService.swift */; };
 		1A7FC0B224E12B7500B90FE1 /* CrmServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7FC0B124E12B7500B90FE1 /* CrmServiceFactory.swift */; };
-		7F9BFF72A00D122AF272496E /* Pods_TekCrmService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C27E4CA2A37B04A398F6040C /* Pods_TekCrmService.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0FBAD3625318DF05BB52EECF /* Pods-TekCrmService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TekCrmService.release.xcconfig"; path = "Target Support Files/Pods-TekCrmService/Pods-TekCrmService.release.xcconfig"; sourceTree = "<group>"; };
 		1A7FC08624E0ED1200B90FE1 /* TekCrmService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TekCrmService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A7FC08924E0ED1200B90FE1 /* TekCrmService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TekCrmService.h; sourceTree = "<group>"; };
 		1A7FC08A24E0ED1200B90FE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,8 +57,9 @@
 		1A7FC0AC24E1276F00B90FE1 /* CrmPayload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrmPayload.swift; sourceTree = "<group>"; };
 		1A7FC0AF24E129E600B90FE1 /* CrmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrmService.swift; sourceTree = "<group>"; };
 		1A7FC0B124E12B7500B90FE1 /* CrmServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrmServiceFactory.swift; sourceTree = "<group>"; };
-		C27E4CA2A37B04A398F6040C /* Pods_TekCrmService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TekCrmService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ECAE2716B18A13AE2623336C /* Pods-TekCrmService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TekCrmService.debug.xcconfig"; path = "Target Support Files/Pods-TekCrmService/Pods-TekCrmService.debug.xcconfig"; sourceTree = "<group>"; };
+		20C5F686EEFE898E650C3EF1 /* Pods_TekCrmService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TekCrmService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3F851EF791BC515DA054768 /* Pods-TekCrmService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TekCrmService.debug.xcconfig"; path = "Target Support Files/Pods-TekCrmService/Pods-TekCrmService.debug.xcconfig"; sourceTree = "<group>"; };
+		BD6DA675AB25131439D6C0E9 /* Pods-TekCrmService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TekCrmService.release.xcconfig"; path = "Target Support Files/Pods-TekCrmService/Pods-TekCrmService.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,20 +67,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F9BFF72A00D122AF272496E /* Pods_TekCrmService.framework in Frameworks */,
+				05A0BFBDA4FB4BCED4426CB3 /* Pods_TekCrmService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		181C8A4FA519ECD4C3995D93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20C5F686EEFE898E650C3EF1 /* Pods_TekCrmService.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1A7FC07C24E0ED1100B90FE1 = {
 			isa = PBXGroup;
 			children = (
 				1A7FC08824E0ED1200B90FE1 /* TekCrmService */,
 				1A7FC08724E0ED1200B90FE1 /* Products */,
 				BB338C5FB9100F6D565AFDF9 /* Pods */,
-				96EE4ECF005E940C1133A98B /* Frameworks */,
+				181C8A4FA519ECD4C3995D93 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,19 +171,11 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
-		96EE4ECF005E940C1133A98B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C27E4CA2A37B04A398F6040C /* Pods_TekCrmService.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		BB338C5FB9100F6D565AFDF9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				ECAE2716B18A13AE2623336C /* Pods-TekCrmService.debug.xcconfig */,
-				0FBAD3625318DF05BB52EECF /* Pods-TekCrmService.release.xcconfig */,
+				B3F851EF791BC515DA054768 /* Pods-TekCrmService.debug.xcconfig */,
+				BD6DA675AB25131439D6C0E9 /* Pods-TekCrmService.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -198,7 +198,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A7FC08E24E0ED1200B90FE1 /* Build configuration list for PBXNativeTarget "TekCrmService" */;
 			buildPhases = (
-				6B5462D750D085D3C380DF58 /* [CP] Check Pods Manifest.lock */,
+				DFC99674339DC7E4C143D4F7 /* [CP] Check Pods Manifest.lock */,
 				1A7FC08124E0ED1200B90FE1 /* Headers */,
 				1A7FC08224E0ED1200B90FE1 /* Sources */,
 				1A7FC08324E0ED1200B90FE1 /* Frameworks */,
@@ -279,7 +279,7 @@
 			shellPath = /bin/sh;
 			shellScript = "# build fat framework script\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\nWORKSPACE=\"TekCrmService.xcworkspace\"\nNAME_OUTPUT_FOLDER=\"Outputs\"\nOUTPUT_FOLDER=\"${PROJECT_DIR}/${NAME_OUTPUT_FOLDER}/\"\n\nSDK_TARGET_NAME=\"TekCrmService\"\nZIP_NAME=\"${SDK_TARGET_NAME}.zip\"\n\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\nmkdir -p \"${OUTPUT_FOLDER}\"\n\n# Build Device and Simulator versions\nxcodebuild -workspace \"${WORKSPACE}\" -scheme \"${SDK_TARGET_NAME}\" -configuration ${CONFIGURATION} -sdk iphoneos BUILD_DIR=\"${BUILD_DIR}\" ONLY_ACTIVE_ARCH=NO BUILD_ROOT=\"${BUILD_ROOT}\" OBJROOT=\"${OBJROOT}/DependentBuilds\"\nxcodebuild -workspace \"${WORKSPACE}\" -scheme \"${SDK_TARGET_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ARCHS=x86_64 ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" OBJROOT=\"${OBJROOT}/DependentBuilds\"\n\n# make fat framework\n\"${PROJECT_DIR}/build-phases/make-fat-framework.sh\" \"${UNIVERSAL_OUTPUTFOLDER}\" \"${SDK_TARGET_NAME}\" \"${OUTPUT_FOLDER}\"\n\n# Open the project's directory in Finder\nopen \"${OUTPUT_FOLDER}\"\n\n# Zip file\n#zip -r \"${ZIP_NAME}\" ./\"${NAME_OUTPUT_FOLDER}\"\n\ncd \"$NAME_OUTPUT_FOLDER\"\n\nzip -r \"${ZIP_NAME}\" \"${SDK_TARGET_NAME}.framework\"\n\ncd ..\n";
 		};
-		6B5462D750D085D3C380DF58 /* [CP] Check Pods Manifest.lock */ = {
+		DFC99674339DC7E4C143D4F7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -450,7 +450,7 @@
 		};
 		1A7FC08F24E0ED1200B90FE1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ECAE2716B18A13AE2623336C /* Pods-TekCrmService.debug.xcconfig */;
+			baseConfigurationReference = B3F851EF791BC515DA054768 /* Pods-TekCrmService.debug.xcconfig */;
 			buildSettings = {
 				BITCODE_GENERATION_MODE = marker;
 				CLANG_ENABLE_MODULES = YES;
@@ -478,7 +478,7 @@
 		};
 		1A7FC09024E0ED1200B90FE1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0FBAD3625318DF05BB52EECF /* Pods-TekCrmService.release.xcconfig */;
+			baseConfigurationReference = BD6DA675AB25131439D6C0E9 /* Pods-TekCrmService.release.xcconfig */;
 			buildSettings = {
 				BITCODE_GENERATION_MODE = bitcode;
 				CLANG_ENABLE_MODULES = YES;

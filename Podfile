@@ -45,7 +45,7 @@ target 'TekCrmService' do
   use_frameworks!
   
   # Pods for TekLocationService
-  pod 'TekCoreNetwork'
-  pod 'TekCoreService'
-  pod 'TekServiceInterfaces', '~> 0.1.8'
+  pod 'TekCoreNetwork', '~> 0.1.22'
+  pod 'TekCoreService', '~> 0.1.16'
+  pod 'TekServiceInterfaces'
 end

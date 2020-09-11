@@ -1,15 +1,15 @@
 PODS:
   - Alamofire (4.8.2)
-  - TekCoreNetwork (0.1.2):
+  - TekCoreNetwork (0.1.22):
     - Alamofire (~> 4.8.2)
-  - TekCoreService (0.1.7):
-    - TekCoreNetwork (~> 0.1.2)
+  - TekCoreService (0.1.16):
+    - TekCoreNetwork (~> 0.1.22)
   - TekServiceInterfaces (0.1.8)
 
 DEPENDENCIES:
-  - TekCoreNetwork
-  - TekCoreService
-  - TekServiceInterfaces (~> 0.1.8)
+  - TekCoreNetwork (~> 0.1.22)
+  - TekCoreService (~> 0.1.16)
+  - TekServiceInterfaces
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -21,10 +21,10 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
-  TekCoreNetwork: df6fe44bcb3224ca888a56bd78014989f5c9ccfd
-  TekCoreService: abdf2e18d841d3976d951f6566e89b34f9dee73e
+  TekCoreNetwork: 8619e2b703bf657b281a9d548f61c2d6220aebaa
+  TekCoreService: 86ebcf7ffaad2e34053c382178420d020f4ec7d4
   TekServiceInterfaces: 59bf139f1171eac66f2779bc67100fd87928d5b1
 
-PODFILE CHECKSUM: 607cb6f57570daa0bc4fb4e2ee5b228e9d14ad2b
+PODFILE CHECKSUM: f78385bc7eb06d766f2f3849eeabcf845706c8a7
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.10.0.beta.2

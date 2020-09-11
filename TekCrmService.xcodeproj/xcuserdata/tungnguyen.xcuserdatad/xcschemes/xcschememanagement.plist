@@ -9,10 +9,15 @@
 			<key>orderHint</key>
 			<integer>6</integer>
 		</dict>
-		<key>TekCrmService.xcscheme_^#shared#^_</key>
+		<key>TekCrmService-Universal.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>5</integer>
+		</dict>
+		<key>TekCrmService.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
 		</dict>
 	</dict>
 </dict>

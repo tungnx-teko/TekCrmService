@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'TekCrmService'
-    s.version          = '0.1.5'
+    s.version          = '0.1.6'
     s.summary          = 'Crm service'
   
   # This description is used to generate tags and improve search results.
@@ -21,12 +21,12 @@ Pod::Spec.new do |s|
   TODO: Add long description of the pod here.
                          DESC
   
-    s.homepage         = 'https://github.com/tungnx-teko/TekCrmServiceDistribution.git'
+    s.homepage         = 'https://github.com/teko-vn/Specs-ios.git'
     # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
-    s.author           = { 'tungnx-teko' => 'tung.nx@teko.vn' }
-    s.source           = { :git => 'https://github.com/tungnx-teko/TekCrmServiceDistribution.git', :tag => s.version.to_s }
-    # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+    s.author           = { '$(git config user.name)' => '$(git config user.email)' }
+    s.source           = { :http => 'http://github.com/teko-vn/Specs-ios/releases/download/' + s.name.to_s + '-v' + s.version.to_s + '/' + s.name.to_s + '.zip' }
+     # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   
     s.ios.deployment_target = '10.0'
   
@@ -45,7 +45,7 @@ Pod::Spec.new do |s|
     s.public_header_files = 'TekCrmService.framework/Headers/*.h'
     s.source_files = 'TekCrmService.framework/Headers/*.{h, m, swift}'
   
-    s.dependency 'TekCoreNetwork', '~> 0.1.2'
-    s.dependency 'TekCoreService', '~> 0.1.6'
-    s.dependency 'TekServiceInterfaces', '~> 0.1.5'
+    s.dependency 'TekCoreNetwork', '~> 0.1.22'
+    s.dependency 'TekCoreService', '~> 0.1.16'
+    s.dependency 'TekServiceInterfaces'
   end

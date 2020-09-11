@@ -213,10 +213,10 @@ extension CoreAPIManagerProtocol {
   public func cancelAll()
 }
 open class CoreAPIManager : TekCoreNetwork.CoreAPIManagerProtocol {
-  public var successRange: Swift.ClosedRange<Swift.Int> {
+  open var successRange: Swift.ClosedRange<Swift.Int> {
     get
   }
-  public var cancelRequestSupport: Swift.Bool {
+  open var cancelRequestSupport: Swift.Bool {
     get
   }
   public var sessionManager: Alamofire.SessionManager
